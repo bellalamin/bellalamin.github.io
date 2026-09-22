@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bellal Amin | Student Profile</title>
+  <style>
+    :root {
+      --navy: #152238;
+      --blue: #2563eb;
+      --light: #f4f7fb;
+      --white: #ffffff;
+      --text: #243247;
+      --border: #d8e1ee;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(135deg, #e8f0ff, var(--light));
+    }
+
+    main {
+      width: min(720px, 100%);
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 14px 35px rgba(21, 34, 56, 0.12);
+    }
+
+    header {
+      padding: 32px;
+      color: var(--white);
+      background: var(--navy);
+    }
+
+    h1 { margin: 0 0 8px; font-size: 2rem; }
+    header p { margin: 0; color: #cbd8ee; }
+    section { padding: 30px 32px 36px; }
+    h2 { margin: 0 0 18px; color: var(--navy); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 16px;
+      border: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    th {
+      width: 28%;
+      color: var(--navy);
+      background: #eef4ff;
+    }
+
+    tr:hover td { background: #fafcff; }
+
+    footer {
+      padding: 15px 32px;
+      color: #607089;
+      background: #f8fafc;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 560px) {
+      body { padding: 14px; }
+      header, section { padding: 24px 20px; }
+      th, td { display: block; width: 100%; }
+      th { border-bottom: 0; }
+      td { margin-bottom: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Bellal Amin</h1>
+      <p>Cybersecurity Student</p>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>Bellal Amin</td>
+        </tr>
+        <tr>
+          <th>Introduction</th>
+          <td>Hello, I am a cybersecurity student at George Mason University. I am interested in learning how technology works and how to keep information and systems secure.</td>
+        </tr>
+        <tr>
+          <th>Hobbies</th>
+          <td>Cybersecurity projects, gaming, working out, and learning about new technology.</td>
+        </tr>
+      </table>
+    </section>
+
+    <footer>Created by Bellal Amin</footer>
+  </main>
+</body>
+</html>
